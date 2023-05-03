@@ -1,19 +1,43 @@
 // sudo npm run dev
 // to initialize Vite
 
+// Local font here:
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Regular.woff') format('woff2'),
+        url('/fonts/RobotoMono-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 // Variables here:
 
+$font1: Roboto;
+$font2: Roboto Mono;
 
+$color1: Pink;
+$color2: White;
+
+$smallscreen: 400px;
+$midscreen: 800px;
+$bigscreen: 1200px;
 
 // Mixins here:
 
 
+
 // Reactive here:
 
+@media screen and (min-width: $smallscreen){
+    
+}
 
 // Style here:
 
-body{
-    background-color: pink;
-    color: whitesmoke;
+body {
+    font-family: $font1, $font2;
+    background-color: $color1;
+    min-width: $smallscreen;
 }
