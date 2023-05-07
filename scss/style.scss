@@ -28,16 +28,42 @@ $bigscreen: 1200px;
 
 
 
-// Reactive here:
-
-@media screen and (min-width: $smallscreen){
-    
-}
-
 // Style here:
 
 body {
     font-family: $font1, $font2;
     background-color: $color1;
     min-width: $smallscreen;
+}
+
+
+h
+
+header {
+
+    
+    display: flex;
+
+    justify-content: center;
+
+    a {
+        padding: 0 2%;
+    }
+
+}
+
+.topsection{
+    display: flex;
+    flex-wrap: column nowrap;
+    width: 50%;
+
+
+}
+
+
+
+// Reactive here:
+
+@media screen and (min-width: $smallscreen){
+    
 }
