@@ -1,0 +1,156 @@
+// sudo npm run dev
+// to initialize Vite
+
+// Local font here:
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Regular.woff') format('woff2'),
+        url('/fonts/RobotoMono-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Variables here:
+
+$font1: Roboto;
+$font2: Roboto Mono;
+$fontsizeheading: 40px;
+$fontsizesubheading: 35px;
+$fontsizeheaderbody: 20px;
+$fontsizebody: 16px;
+$fontsizesmallest: 12px;
+
+
+$color1: Pink;
+$color2: White;
+
+$smallscreen: 400px;
+$midscreen: 800px;
+$bigscreen: 1200px;
+
+// Mixins here:
+
+
+
+// Style here:
+
+body {
+    font-family: $font1, $font2;
+    background-color: $color1;
+    min-width: $smallscreen;
+    margin: 0;
+}
+
+
+
+header {
+    font-size: $fontsizesmallest;
+    
+    flex-direction: column;
+    display: flex;    
+    justify-content: center;
+    background-color: aquamarine;
+
+    .links {
+        justify-content: space-between;
+        font-display: center;
+        text-align: justify;
+        text-align: center;
+        
+    }
+
+    .topsection{
+        flex-direction: column;
+    
+        background-color: aqua;
+        
+        h1 {
+            font-size: $fontsizeheading;
+            margin: 0px 4rem;
+            font-display: center;
+            text-align: justify;
+            text-align: center;
+        }
+    
+        h2 {
+            font-size: $fontsizesubheading;
+            margin: 0px 0px;
+            flex-flow: row nowrap;
+            font-display: center;
+            text-align: justify;
+            text-align: center;
+        }
+    
+        p {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            font-size: $fontsizeheaderbody;
+            margin: 0px 4rem;
+            font-display: center;
+            text-align: justify;
+            text-align: center;
+        }
+    
+    }
+
+}
+
+footer {
+    
+    
+    
+    flex-direction: column;
+    display: flex;    
+    background-color: aqua;
+
+    .links {
+        justify-content: space-between;
+        font-display: center;
+        text-align: justify;
+        text-align: center;
+        
+    }
+
+    .bottomsection {
+        flex-direction: column;
+    
+        background-color: aquamarine;
+
+        
+
+        h2 {
+            font-size: $fontsizesubheading;
+            margin: 0px 0px;
+            flex-flow: row nowrap;
+            font-display: center;
+            text-align: justify;
+            text-align: center;
+        }
+    
+        p {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            font-size: $fontsizeheaderbody;
+            margin: 0px 4rem;
+            font-display: center;
+            text-align: justify;
+            text-align: center;
+        }
+
+    }
+
+
+
+}
+
+
+
+// Reactive here:
+
+@media screen and (min-width: $smallscreen){
+    
+}
