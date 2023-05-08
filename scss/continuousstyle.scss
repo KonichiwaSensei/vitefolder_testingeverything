@@ -36,6 +36,11 @@ $bigscreen: 1200px;
 
 // Style here:
 
+* {
+    box-sizing: border-box;
+  } //THIS SHOULD BE USED ALMOST ALWAYS
+
+
 body {
     font-family: $font1, $font2;
     background-color: $color1;
@@ -101,9 +106,7 @@ header {
 footer {
     
     
-    
-    flex-direction: column;
-    display: flex;    
+
     background-color: aqua;
 
     .links {
