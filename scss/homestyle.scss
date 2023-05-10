@@ -22,9 +22,10 @@ $fontsizeheaderbody: 20px;
 $fontsizebody: 16px;
 $fontsizesmallest: 12px;
 
-
-$color1: Pink;
-$color2: White;
+$color1: #474B71;
+$color2: #e9eaec;
+$color3: #EDBE06;
+$color4: #333652;
 
 $smallscreen: 400px;
 $midscreen: 800px;
@@ -41,5 +42,5 @@ $bigscreen: 1200px;
     font-size: $fontsizebody;
     display: flex;
     justify-content: center;
-    
+    color: $color2;
 }

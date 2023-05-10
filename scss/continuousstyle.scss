@@ -22,7 +22,6 @@ $fontsizeheaderbody: 20px;
 $fontsizebody: 16px;
 $fontsizesmallest: 12px;
 
-
 $color1: #474B71;
 $color2: #e9eaec;
 $color3: #EDBE06;
@@ -70,12 +69,12 @@ header {
         text-align: center;
 
         a {
-            color: $color4;
+            color: $color1;
             padding: 5%;
             text-decoration: none;
 
             &:hover {
-                color: $color3;
+                color: $color2;
                 text-decoration: underline;
             }
         }
@@ -97,7 +96,7 @@ header {
         }
 
         h2 {
-            color: #e9eaec;
+            color: $color2;
             font-size: $fontsizesubheading;
             margin: 0px 0px;
             flex-flow: row nowrap;
@@ -140,12 +139,12 @@ footer {
         text-align: center;
 
         a {
-            color: $color4;
+            color: $color1;
             padding: 5%;
             text-decoration: none;
 
             &:hover {
-                color: $color3;
+                color: $color2;
                 text-decoration: underline;
             }
         }
@@ -164,7 +163,7 @@ footer {
 
 
         h2 {
-            color: #e9eaec;
+            color: $color2;
             font-size: $fontsizesubheading;
             margin: 0px 0px;
             flex-flow: row nowrap;
