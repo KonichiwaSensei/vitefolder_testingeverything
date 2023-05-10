@@ -23,8 +23,10 @@ $fontsizebody: 16px;
 $fontsizesmallest: 12px;
 
 
-$color1: Pink;
-$color2: White;
+$color1: #474B71;
+$color2: #e9eaec;
+$color3: #EDBE06;
+$color4: #333652;
 
 $smallscreen: 400px;
 $midscreen: 800px;
@@ -38,7 +40,9 @@ $bigscreen: 1200px;
 
 * {
     box-sizing: border-box;
-  } //THIS SHOULD BE USED ALMOST ALWAYS
+}
+
+//THIS SHOULD BE USED ALMOST ALWAYS
 
 
 body {
@@ -52,36 +56,48 @@ body {
 
 header {
     font-size: $fontsizesmallest;
-    
+
     flex-direction: column;
-    display: flex;    
+    display: flex;
     justify-content: center;
-    background-color: aquamarine;
-   
+    background-color: $color3;
+
 
     .links {
         justify-content: space-between;
         font-display: center;
         text-align: justify;
         text-align: center;
-        
+
+        a {
+            color: $color4;
+            padding: 5%;
+            text-decoration: none;
+
+            &:hover {
+                color: $color3;
+                text-decoration: underline;
+            }
+        }
+
     }
 
-    .topsection{
+    .topsection {
         flex-direction: column;
-    
-        background-color: aqua;
-        
+
+        background-color: $color4;
+
         h1 {
-            color: black;
+            color: $color3;
             font-size: $fontsizeheading;
             margin: 0px 4rem;
             font-display: center;
             text-align: justify;
             text-align: center;
         }
-    
+
         h2 {
+            color: #e9eaec;
             font-size: $fontsizesubheading;
             margin: 0px 0px;
             flex-flow: row nowrap;
@@ -89,8 +105,9 @@ header {
             text-align: justify;
             text-align: center;
         }
-    
+
         p {
+            color: $color3;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
@@ -100,50 +117,66 @@ header {
             text-align: justify;
             text-align: center;
         }
-    
+
     }
 
 }
 
 footer {
     // border: 1px solid red;
-    
+
     position: fixed; // positioned relative to the viewport so it stays when scrolling
     bottom: 0; // fixed to bottom
     width: 100%; // fills page
-    
+
     height: auto;
 
-    background-color: aqua;
+    background-color: $color3;
 
     .links {
         justify-content: space-between;
         font-display: center;
         text-align: justify;
         text-align: center;
-        
+
+        a {
+            color: $color4;
+            padding: 5%;
+            text-decoration: none;
+
+            &:hover {
+                color: $color3;
+                text-decoration: underline;
+            }
+        }
+
     }
 
     .bottomsection {
-       
+
 
         flex-direction: column;
-        
-    
-        background-color: aquamarine;
 
-        
+
+        background-color: $color4;
+
+
+
 
         h2 {
+            color: #e9eaec;
             font-size: $fontsizesubheading;
             margin: 0px 0px;
             flex-flow: row nowrap;
             font-display: center;
             text-align: justify;
             text-align: center;
+
+
         }
-    
+
         p {
+            color: $color3;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
@@ -164,6 +197,4 @@ footer {
 
 // Reactive here:
 
-@media screen and (min-width: $smallscreen){
-    
-}
+@media screen and (min-width: $smallscreen) {}
