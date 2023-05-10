@@ -57,6 +57,7 @@ header {
     display: flex;    
     justify-content: center;
     background-color: aquamarine;
+   
 
     .links {
         justify-content: space-between;
@@ -104,8 +105,13 @@ header {
 }
 
 footer {
+    // border: 1px solid red;
     
+    position: fixed; // positioned relative to the viewport so it stays when scrolling
+    bottom: 0; // fixed to bottom
+    width: 100%; // fills page
     
+    height: auto;
 
     background-color: aqua;
 
@@ -118,7 +124,10 @@ footer {
     }
 
     .bottomsection {
+       
+
         flex-direction: column;
+        
     
         background-color: aquamarine;
 
