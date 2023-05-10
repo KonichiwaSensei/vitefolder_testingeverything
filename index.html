@@ -9,7 +9,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="svg" href="./imgs/Favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Set title -->
@@ -26,16 +26,15 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
     rel="stylesheet">
 
-  <!-- Script linked here -->
-  <script src="./js/script.js"></script>
-
+  <!-- JavaScript linked here -->
+  <script src="./js/colorscript.js" defer></script>
 
 </head>
 
 
 <body>
 
-  <header>
+  <header onclick="randomColorGenerator()">
     <section class="links">
       <a href="./index.html">Click me!</a>
       <a href="./html/aboutme.html">... or ME!</a>
@@ -43,7 +42,7 @@
     <section class="topsection">
       <h1 class="main_header_title">Hello World!</h1>
       <h2> and welcome to my test website</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, facilis.</p>
+      <p class="header_text">I bet you won't try and click this!</p>
     </section>
   </header>
 
@@ -51,30 +50,15 @@
     <p>This is the home page</p>
   </section>
 
-
-
-  <a href="http://example.com" target="_blank">Example</a>
-
-
-
-
-
-
-
-
-
-
-
-
-  <footer>
+  <footer onclick="randomColorGenerator()">
     <section class="links">
       <a href="./index.html">Click me!</a>
       <a href="./html/aboutme.html">... or ME!</a>
     </section>
 
     <section class="bottomsection">
-      <h2>Hope you enjoy it!</h1>
-        <p>Lorem, ipsum dolor.</p>
+      <h2 class="footer_title">Hope you enjoy it!</h1>
+        <p class="footer_text">You can click here too if you wanna!</p>
     </section>
 
   </footer>
