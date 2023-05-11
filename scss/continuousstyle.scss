@@ -196,4 +196,17 @@ footer {
 
 // Reactive here:
 
-@media screen and (min-width: $smallscreen) {}
+@media screen and (max-width: $smallscreen) {
+
+
+}
+
+@media screen and (min-width: $midscreen) {
+
+    
+}
+
+@media screen and (min-width: $bigscreen) {
+    
+
+}

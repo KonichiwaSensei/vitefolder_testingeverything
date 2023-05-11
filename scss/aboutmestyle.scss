@@ -27,9 +27,9 @@ $color2: #e9eaec;
 $color3: #EDBE06;
 $color4: #333652;
 
-$smallscreen: 400px;
-$midscreen: 800px;
-$bigscreen: 1200px;
+$smallscreen: 768px;
+$midscreen: 1000px;
+$bigscreen: 1400px;
 
 // Mixins here:
 
@@ -41,6 +41,55 @@ $bigscreen: 1200px;
 .aboutsection1{
     font-size: $fontsizebody;
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
     color: $color2;
+
+    img {
+        position: relative;
+        width: 200px;
+        height: auto;
+
+    }
 }
+
+
+// Reactive here:
+
+@media screen and (max-width: $smallscreen) {
+
+    .aboutsection1{
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: $midscreen) {
+    .aboutsection1{
+        img {
+            width: 400px;
+            height: auto;
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: $bigscreen) {
+    
+    .aboutsection1{
+        img {
+            width: 600px;
+            height: auto;
+        }
+    }
+
+
+}
+
+
+
